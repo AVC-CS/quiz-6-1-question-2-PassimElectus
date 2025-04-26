@@ -30,9 +30,20 @@ void readFile(int filename)
         cout << dummy << endl;
         while (ifs >> id >> firstname >> deptname >> salary)
         {
-            
+            cout << id << firstname << deptname << salary << endl;
         }
     }
 
 
+}
+
+void writeFile (int filename)
+{
+    ofstream ofs;
+    if (!ofs)
+    {
+        cout << "File Not Found" << endl;
+
+    }
+    
 }
