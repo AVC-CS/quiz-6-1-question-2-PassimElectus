@@ -13,5 +13,26 @@ void writefile(int);
 void readFile(int filename)
 {
     ifstream ifs;
+    string id;
+    string firstname;
+    string deptname;
+    string salary;
+    int dummy;
+    
+    ifs.open("employee.txt");
+    if(!ifs)
+    {
+        cout << "File Not Found" << endl;
+    }
+    else
+    {
+        ifs >> dummy;
+        cout << dummy << endl;
+        while (ifs >> id >> firstname >> deptname >> salary)
+        {
+            
+        }
+    }
+
 
 }
