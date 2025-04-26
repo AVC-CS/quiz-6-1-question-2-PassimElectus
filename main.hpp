@@ -3,15 +3,18 @@
  ***************************************************/
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 
-void readFile(int);
-void writefile(int);
+
+int readFile(string);
+int writefile(string);
 
 
-void readFile(int filename)
+int readFile(string filename)
 {
+    int count = 0;
     ifstream ifs;
     string id;
     string firstname;
@@ -33,12 +36,13 @@ void readFile(int filename)
             cout << id << firstname << deptname << salary << endl;
         }
     }
-
+    return count;
 
 }
 
-void writeFile (int filename)
+int writeFile (string filename)
 {
+    int count = 0;
     ofstream ofs;
     if (!ofs)
     {
@@ -54,6 +58,7 @@ void writeFile (int filename)
     ofs << id << " " << firstname << " " << deptname << " " << salary;
 
     ofs.close();
+    return count;
 
 
 
