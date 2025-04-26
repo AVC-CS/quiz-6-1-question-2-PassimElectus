@@ -45,5 +45,16 @@ void writeFile (int filename)
         cout << "File Not Found" << endl;
 
     }
-    
+    string id;
+    string firstname;
+    string deptname;
+    string salary;
+    cout << "Please enter your id, name, Department, and Salary" << endl;
+    cin >> id >> firstname >> deptname >> salary;
+    ofs << id << " " << firstname << " " << deptname << " " << salary;
+
+    ofs.close();
+
+
+
 }
