@@ -36,6 +36,7 @@ int readFile(string filename)
             cout << id << firstname << deptname << salary << endl;
         }
     }
+    ifs.close();
     return count;
 
 }
